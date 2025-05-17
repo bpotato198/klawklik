@@ -9,7 +9,7 @@ int main(void) {
     int points = 0;
     char pointstxt[50];
 
-    InitWindow(scrnwidth, scrnheight, "KlawKlik");
+    InitWindow(scrnwidth, scrnheight, "KlawKlik ver 0.2.1");
 
     SetTargetFPS(60);
 
@@ -25,10 +25,10 @@ int main(void) {
             DrawText(pointstxt, 10, 10, 20, DARKGREEN);
 
             DrawText("SHOP:", 10, 50, 20, DARKGREEN);
-            DrawText("Autoclicker: 601 points click Y to buy", 10, 60, 20, DARKGREEN);
+            DrawText("5click will give you 5 clicks: 601 points click Y to buy", 10, 60, 20, DARKGREEN);
             if (IsKeyPressed(KEY_Y)) {
                 if (points > 600) {
-                    points += 1; 
+                    points += 5; 
                 }
 
 

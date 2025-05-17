@@ -1,6 +1,6 @@
 cmake_minimum_required(VERSION 3.10)
 
-project(klawklik VERSION 0.1)
+project(klawklik VERSION 0.2.1)
 
 set(C_STANDARD 17)
 set(C_STANDARD_REQUIRED OFF)
