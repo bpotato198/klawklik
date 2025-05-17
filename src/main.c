@@ -24,13 +24,19 @@ int main(void) {
             
             DrawText(pointstxt, 10, 10, 20, DARKGREEN);
 
-        EndDrawing();
-
+            DrawText("SHOP:", 10, 50, 20, DARKGREEN);
+            DrawText("Autoclicker: 601 points click Y to buy", 10, 60, 20, DARKGREEN);
+            if (IsKeyPressed(KEY_Y)) {
+                if (points > 600) {
+                    points += 1; 
+                }
 
 
     }
-    CloseWindow();
 
-    return 0;
+    EndDrawing();
+}
+CloseWindow();
+return 0;
 
 }
