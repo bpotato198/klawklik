@@ -4,6 +4,8 @@ you click the spacebar and you get points for it
 
 # Installation
 *from source*
+*remember, to run klawklik you must have Raylib and OpenGL*
+
 
 1. `git clone` this repository
 2. make sure you have Clang and CMake
