@@ -1,11 +1,14 @@
 #include <raylib.h>
 #include <stdio.h>
 
+
+
 #define MAXCLICKS 9999
 
 int main(void) {
     const int scrnwidth = 900;
     const int scrnheight = 500;
+    
     int points = 0;
     char pointstxt[50];
 
@@ -30,6 +33,12 @@ int main(void) {
                 if (points > 600) {
                     points += 5; 
                 }
+
+            if (points == MAXCLICKS) {
+                ClearBackground(GRAY);
+                DrawText("you won!", 20, 50, 60, DARKGREEN);
+            }
+            
 
 
     }
